@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs - collaborative stampmaker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="controls-container">
+        <div id="colorPickerContainer">
+            <label id="colorPickerLabel" for="colorPicker">Select Color:</label>
+            <input type="color" id="colorPicker" value="#ffffff">
+        </div>
+        <div id="grid-size-container">
+            <label>Grid Size:</label>
+            <div class="radio-group">
+                <input type="radio" id="grid-size-25" name="grid-size" value="25" checked>
+                <label for="grid-size-25">25x25</label>
+                <input type="radio" id="grid-size-69" name="grid-size" value="69">
+                <label for="grid-size-69">69x69</label>
+                <input type="radio" id="grid-size-144" name="grid-size" value="144">
+                <label for="grid-size-144">144x144</label>
+            </div>
+        </div>
+        <div id="brush-size-container">
+            <label>Brush Size:</label>
+            <div class="radio-group">
+                <input type="radio" id="brush-size-1" name="brush-size" value="1" checked>
+                <label for="brush-size-1">1x1</label>
+                <input type="radio" id="brush-size-2" name="brush-size" value="2">
+                <label for="brush-size-2">2x2</label>
+                <input type="radio" id="brush-size-4" name="brush-size" value="4">
+                <label for="brush-size-4">4x4</label>
+            </div>
+        </div>
+        <div id="palette-container">
+            <h2>Actual Palette</h2>
+            <div id="palette"></div>
+        </div>
+    </div>
+    <div id="grid-container">
+        <div id="grid"></div>
+    </div>
+    <div id="buttons-container">
+        <button id="saveButton">THIS!</button>
+        <button id="downloadButton"></button>
+    </div>
+    <div id="gallery-container">
+        <h2>Gallery</h2>
+        <div id="gallery"></div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
